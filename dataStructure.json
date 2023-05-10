@@ -1,0 +1,22 @@
+{
+    "misc" : {
+        "metric_1" : {"value": 100},
+        "metric_2" : {"value": 100}
+    },
+
+    "counter" : {
+        "metric_3" : {"value": 0},
+        "metric_4" : {"value": 0}
+    },
+
+    "time_series" : {
+        "metric_1" : {
+            "value" : [0, 1, 2, 3],
+            "timestamp" : [1681258397, 1681258398, 1681258399]
+        },
+        "metric_2" : {
+            "value" : [100, 101, 102, 103],
+            "timestamp" : [1681258397, 1681258398, 1681258399]
+        }
+    }
+}
