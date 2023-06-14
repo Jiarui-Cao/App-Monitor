@@ -22,3 +22,5 @@ while True:
     }
 
     r = requests.post(url = api_endpoint, data = payload)
+
+    # TODO: add sleep() to make sure AUM doesn't bombard the server

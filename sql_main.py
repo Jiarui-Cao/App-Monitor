@@ -1,6 +1,10 @@
 import psycopg2
 from config import config
 
+# TODO: include python with statement
+# TODO: incorporate everything into class to avoid initialize conn and close it every time
+# TODO: get all time-series data into one table
+
 
 def create_tables():
   """ create 3 tables """

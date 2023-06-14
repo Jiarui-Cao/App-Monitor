@@ -47,5 +47,7 @@ def update_metric(datatype, metric, value, unit):
 
 ### POST ###
 
+# TODO: Need to implement start time, end time, & granularity (automatic computation) level of time-series data fetches, also need defaults!
+
 
 app.run(debug=True)
