@@ -1,13 +1,24 @@
 import requests
+import json
+
+api_url = "http://127.0.0.1:5000"
 
 ### Querying data
-queries = ["/data",
-           "/data/misc",
-           "/data/misc/lolol",
-           "/data/counter",
-           "/metric_names/misc",
+queries = [
+        #    "/data",
+        #    "/data/misc",
+           "/data/misc/alpha",
+        #    "/data/misc/lolol",
+        #    "/data/counter",
+
+        #    "/data/time_series",
+        #    "/data/time_series/weight",
+        #    "/data/time_series/lolol",
+
+        #    "/metric_names/misc",
+        #    "/metric_names/counter",
+        #    "/metric_names/time_series"
            ]
-api_url = "http://127.0.0.1:5000"
 
 for q in queries:
     response = requests.get(api_url + q)
@@ -15,8 +26,15 @@ for q in queries:
 
 
 ### Deleting data
-response = requests.delete(api_url + "/misc/beta")
-print("After deletion:", response.json(), "\n")
+# response = requests.delete(api_url + "/time_series/gamma")
+# print("After deletion:", response.json(), "\n")
 
 
-### Updating data
+# ### Updating data
+# data = {"datatype": "time_series",
+#         "metric": "weight",
+#         "value": 75,
+#         "unit": "kg"}
+# headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
+# response = requests.post(api_url + '/update', json=data, headers=headers)
+# print(response.json())
