@@ -278,7 +278,7 @@ db = database(config())
 #   ("test", 100, "kg")
 # ])
 
-# db.update_metric("counter", "RAM", 4)
+# db.update_metric("counter", "RAM", )
 
 
 
